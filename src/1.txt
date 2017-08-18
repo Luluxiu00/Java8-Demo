@@ -1,0 +1,7 @@
+第一章：Java 8中的 Lambda表达式
+在这一章，我们说一说Lambda表达式的语法。我们将从经典的Java语法过渡到新式的Lambda表达式语法。
+我们也会讲一讲Lambda表达式的原理-即在运行时Lambda表达式如何表示，涉及哪些字节码指令。
+入门
+如果你熟悉Groovy或者Ruby这些支持Lambda表达式的编程语言，那么你一开始可能会认为Java的Lambda表达式并不像其他编程语言中的那样简洁。在java中，Lambda表达式是SAM类型，SAM类型是一个具有单一抽象方法的接口。（对了，Java8接口可以包含非抽象方法了-即default/defender方法，我们将在后面讲到它）
+举个例子，众所周知的Runnable接口就是SAM类型的：
+Runnable r =()->System.out.println("hello Lambda!");
